@@ -1,0 +1,40 @@
+.sidebar {
+  /* makes the sidebar stick to a fixed position*/
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 72px;
+  /*z-index can help prioritize if the content is in front o back*/
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link {
+  height: 74px;
+  /* display flex to make the container a flexbox*/
+  display: flex;
+  /* jusify-content, 
+  to align items to the center of the container horizontally */
+  justify-content: center;
+  /* align-items inside container, vertically */
+  align-items: center;
+  /*causes the elements to be displayed vertically*/
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(233, 229, 229);
+}
+
+.sidebar-link img { 
+  height:24px;
+  font-size:10px;
+}
+
+.sidebar-link div {
+  font-family:Roboto, arial;
+  font-size: 10px;
+}
